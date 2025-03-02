@@ -117,8 +117,8 @@ export default function RootLayout({
         <div className="absolute  flex items-center justify-center  w-full ">
           <FloatingDock
             items={items}
-            desktopClassName="z-40 fixed bottom-2"
-            mobileClassName="z-40 fixed bottom-2"
+            desktopClassName="z-50 fixed bottom-2"
+            mobileClassName="z-50 fixed bottom-2"
           />
         </div>
 

@@ -223,7 +223,7 @@ const ProjectsPage: React.FC = () => {
                   <Image
                     src={item.img}
                     alt="cover"
-                    className="z-10 absolute bottom-0"
+                    className=" absolute bottom-0"
                     width={800}
                     height={800}
                   />
