@@ -73,7 +73,7 @@ const projects = [
   },
   {
     title: "CSS",
-    icon: "/techicons/css.svg",
+    icon: "/techIcons/css.svg",
     link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
   },
   {
