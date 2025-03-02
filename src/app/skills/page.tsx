@@ -65,7 +65,7 @@ export default function Skills() {
 //   { title: "REACT", icon: "/techIcons/react.svg" },
 //   { title: "TAILWIND", icon: "/techIcons/tailwind.svg" },
 // ];
-export const projects = [
+const projects = [
   {
     title: "HTML",
     icon: "/techIcons/html.svg",
