@@ -7,16 +7,16 @@ import { FaLocationArrow } from "react-icons/fa";
 
 export default function About() {
   return (
-    <div className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5  ">
-      <div className="min-h-screen">
+    <div className="min-h-screen relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5 max-lg:pb-20 ">
+      <div className="">
         <div className="">
           <Spotlight duration={3} />
         </div>
-        <div className="min-h-screen w-full dark:bg-black-100 bg-white  dark:bg-grid-white/[0.06] bg-grid-black/[0.2]  flex items-center justify-center absolute top-0 left-0">
-          <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
+        <div className="h-screen w-full dark:bg-black-100 bg-white  dark:bg-grid-white/[0.3] bg-grid-black/[0.2]  flex items-center justify-center absolute top-0 left-0">
+          <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
         </div>
-        <div className="min-h-screen flex flex-col px-5 pt-20 text-slate-200 z-100">
-          <div className="pt-4 flex gap-12 px-20 max-xl:px-2 z-10 items-center max-xl:grid grid-cols-1 ">
+        <div className="min-h-screen flex flex-col px-5 pt-20 text-slate-200 ">
+          <div className="pt-4 flex gap-12 px-20 max-xl:px-2  items-center max-xl:grid grid-cols-1 z-10">
             <Image
               src="/abdiImageFinal.png"
               width={400}

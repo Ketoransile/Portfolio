@@ -166,7 +166,7 @@ const FloatingDockMobile = ({
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-black/50 backdrop-blur-sm z-40"
+            className="fixed inset-0 bg-black/50 backdrop-blur-sm"
             onClick={() => setOpen(false)} // Close menu when clicking outside
           />
         )}
@@ -177,7 +177,7 @@ const FloatingDockMobile = ({
         {open && (
           <motion.div
             layoutId="nav"
-            className="absolute bottom-full mb-2 inset-x-0 grid grid-cols-3 gap-x-32 gap-y-10 items-center justify-center z-50"
+            className="absolute bottom-full mb-2 inset-x-0 grid grid-cols-3 gap-x-32 gap-y-10 items-center justify-center "
           >
             {items.map((item, idx) => (
               <motion.div
@@ -219,7 +219,7 @@ const FloatingDockMobile = ({
       {/* Toggle Button */}
       <button
         onClick={() => setOpen(!open)}
-        className="h-10 w-10 rounded-full bg-gray-50 dark:bg-neutral-800 flex items-center justify-center z-50"
+        className="h-10 w-10 rounded-full bg-gray-50 dark:bg-neutral-800 flex items-center justify-center "
       >
         <IconLayoutNavbarCollapse className="h-5 w-5 text-neutral-500 dark:text-neutral-400" />
       </button>
