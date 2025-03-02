@@ -1,17 +1,16 @@
 import { PinContainer } from "@/components/ui/3d-pin";
 import { Spotlight } from "@/components/ui/Spotlight";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
-import Image from "next/image";
 import { FaLocationArrow } from "react-icons/fa";
 
-type projectProps = {
-  id: number;
-  title: string;
-  des: string;
-  img: string;
-  iconLists: string[]; // Fixed typo to match the prop name
-  link: string;
-};
+// type projectProps = {
+//   id: number;
+//   title: string;
+//   des: string;
+//   img: string;
+//   iconLists: string[]; // Fixed typo to match the prop name
+//   link: string;
+// };
 export default function Proejcts() {
   return (
     <>

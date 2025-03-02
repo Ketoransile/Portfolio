@@ -1,7 +1,6 @@
 import { ContactForm } from "@/components/ContactForm";
 import { Spotlight } from "@/components/ui/Spotlight";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
-import { TypewriterEffect } from "@/components/ui/TypewriterEffect";
 
 export default function Contact() {
   return (
