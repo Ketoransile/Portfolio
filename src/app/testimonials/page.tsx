@@ -16,7 +16,7 @@ export default function AnimatedTestimonialsDemo() {
         className=" max-md:text-xl md:text-3xl lg:text-4xl pt-12"
         words="Feedback That Drives Me Forward"
       />
-      <AnimatedTestimonials testimonials={testimonials} />;
+      <AnimatedTestimonials testimonials={testimonials} />
     </div>
   );
 }
