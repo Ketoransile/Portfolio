@@ -24,7 +24,7 @@ export default function Contact() {
         words="Have a project you'd like to discuss? Just leave me a message and
         I'll get back to you within 24 hours."
       />
-      <div className="max-w-[800px] z-10  bg-gradient-to-tr from-black to-transparent mt-12 p-12 rounded-2xl max-md:w-full max-md:p-0">
+      <div className="max-w-[800px] z-10  bg-gradient-to-t from-black to-transparent mt-12 p-12 rounded-2xl max-md:w-full max-md:p-0">
         <ContactForm />
       </div>
       {/* </div> */}

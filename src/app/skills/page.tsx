@@ -1,8 +1,6 @@
 import { HoverEffect } from "../../components/ui/CardHoverEffect";
 import { Spotlight } from "@/components/ui/Spotlight";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
-import Image from "next/image";
-import { FaReact } from "react-icons/fa";
 
 export default function Skills() {
   return (

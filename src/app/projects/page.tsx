@@ -1,6 +1,7 @@
 import { PinContainer } from "@/components/ui/3d-pin";
 import { Spotlight } from "@/components/ui/Spotlight";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
+import Image from "next/image";
 import { FaLocationArrow } from "react-icons/fa";
 
 // type projectProps = {
@@ -70,10 +71,12 @@ export default function Proejcts() {
                   >
                     {/* <img src="/bg.png" alt="bgimg" /> */}
                   </div>
-                  <img
+                  <Image
                     src={item.img}
                     alt="cover"
                     className="z-10 absolute bottom-0"
+                    width={800}
+                    height={800}
                   />
                 </div>
 
@@ -101,7 +104,13 @@ export default function Proejcts() {
                           transform: `translateX(-${5 * index + 2}px)`,
                         }}
                       >
-                        <img src={icon} alt="icon5" className="p-2" />
+                        <Image
+                          src={icon}
+                          alt="icon5"
+                          className="p-2"
+                          width={64}
+                          height={64}
+                        />
                       </div>
                     ))}
                   </div>
