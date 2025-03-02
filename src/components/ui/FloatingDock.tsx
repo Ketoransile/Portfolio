@@ -177,7 +177,7 @@ const FloatingDockMobile = ({
         {open && (
           <motion.div
             layoutId="nav"
-            className="absolute bottom-full mb-2 inset-x-0 flex flex-col gap-x-32 gap-y-10 items-center justify-center z-50"
+            className="absolute bottom-full mb-2 inset-x-0 grid grid-cols-3 gap-x-32 gap-y-10 items-center justify-center z-50"
           >
             {items.map((item, idx) => (
               <motion.div
