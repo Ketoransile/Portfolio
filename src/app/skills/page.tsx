@@ -16,7 +16,7 @@ export default function Skills() {
       <div className="min-h-screen flex flex-col px-5 pt-12 text-slate-200 ">
         <div className="pt-4 flex gap-12 px-20 z-10 items-center">
           <TextGenerateEffect
-            className="   max-md:text-xl md:text-3xl lg:text-4xl"
+            className=" text-center  max-md:text-xl md:text-3xl lg:text-4xl"
             words="Essential Tools I Use"
           />
         </div>
