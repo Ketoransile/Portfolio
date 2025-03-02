@@ -58,6 +58,7 @@ export const HoverEffect = ({
                 alt="tech-icon"
                 width={64}
                 height={64}
+                className="items-center"
               />
             </CardDescription>
           </Card>
