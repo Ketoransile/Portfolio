@@ -3,7 +3,7 @@ import { Spotlight } from "@/components/ui/Spotlight";
 
 export default function Home() {
   return (
-    <div className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5 ">
+    <div className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5 max-lg:pt-20">
       <main className="min-h-screen">
         <div className="">
           <Spotlight duration={3} />

@@ -7,22 +7,22 @@ import { FaLocationArrow } from "react-icons/fa";
 
 export default function About() {
   return (
-    <div className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5 ">
+    <div className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5  ">
       <div className="min-h-screen">
         <div className="">
-          <Spotlight duration={7} />
+          <Spotlight duration={3} />
         </div>
         <div className="min-h-screen w-full dark:bg-black-100 bg-white  dark:bg-grid-white/[0.06] bg-grid-black/[0.2]  flex items-center justify-center absolute top-0 left-0">
           <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
         </div>
         <div className="min-h-screen flex flex-col px-5 pt-20 text-slate-200 z-100">
-          <div className="pt-4 flex gap-12 px-20 z-10 items-center">
+          <div className="pt-4 flex gap-12 px-20 max-xl:px-2 z-10 items-center max-xl:grid grid-cols-1 ">
             <Image
               src="/abdiImageFinal.png"
               width={400}
               height={400}
               alt="my-image"
-              className="object-contain rounded-t-full rounded-b-full"
+              className="object-contain rounded-t-full rounded-b-full max-xl:w-64 max-lg:w-32"
             />
             <div className="flex flex-col">
               {" "}
@@ -30,7 +30,7 @@ export default function About() {
                 className=" text-[40px] md:text-3xl lg:text-4xl"
                 words="Profile"
               />
-              <p className="text-lg max-w-[800px]">
+              <p className="text-lg xl:max-w-[800px] max-xl:w-full text-slate-300">
                 I’m Abdi, a Software Engineer and Full-Stack Developer
                 passionate about building innovative, scalable, and user-centric
                 web applications. With expertise in the MERN stack, Next.js, and
@@ -46,7 +46,7 @@ export default function About() {
                 create impact-driven solutions that bridge technology and
                 real-world needs. Let’s build something amazing together!
               </p>
-              <div className="flex gap-12 items-center">
+              <div className="flex gap-12 max-lg:pt-10 items-center">
                 <MagicButton
                   title="HIRE ME"
                   icon={<FaLocationArrow />}

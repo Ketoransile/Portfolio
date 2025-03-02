@@ -30,7 +30,7 @@ const Hero = () => {
               { text: "Digital" },
               { text: "Solution" },
             ]}
-            className="lg:text-xl"
+            className="max-md:text-xs md:text-sm lg:text-sm  text-slate-400 font-serif"
           />
           <TextGenerateEffect
             className="text-center text-[40px] md:text-3xl lg:text-4xl"
@@ -48,7 +48,7 @@ const Hero = () => {
             seamless digital experiences.
           </p> */}
 
-          <Link href="/about">
+          <Link href="/projects">
             <MagicButton
               title="Show My Work"
               icon={<FaLocationArrow />}

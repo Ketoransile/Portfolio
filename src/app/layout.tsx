@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Toaster } from "@/components/ui/sonner";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
@@ -9,7 +10,9 @@ import { FaUser } from "react-icons/fa";
 import { FaProjectDiagram } from "react-icons/fa";
 import { FaCode } from "react-icons/fa";
 import { FaQuoteLeft } from "react-icons/fa";
+import { MdOutlineContactPhone } from "react-icons/md";
 import { Spotlight } from "@/components/ui/Spotlight";
+import { FaTelegram } from "react-icons/fa";
 const items = [
   {
     title: "Home",
@@ -47,20 +50,26 @@ const items = [
     ),
     href: "/testimonials",
   },
-
   {
-    title: "Twitter",
+    title: "Contact",
     icon: (
-      <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      <MdOutlineContactPhone className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
-    href: "/",
+    href: "/contact",
+  },
+  {
+    title: "Telegram",
+    icon: (
+      <FaTelegram className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+    ),
+    href: "https://t.me/Kehtoran",
   },
   {
     title: "GitHub",
     icon: (
       <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
-    href: "/",
+    href: "https://github.com/Ketoransile",
   },
 ];
 
@@ -87,7 +96,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased font-serif`}
       >
         {/* <ThemeProvider
           attribute="class"
@@ -104,6 +113,7 @@ export default function RootLayout({
         >
           {" "}
           {children}
+          <Toaster />
         </ThemeProvider>
         <div className="absolute  flex items-center justify-center  w-full ">
           <FloatingDock

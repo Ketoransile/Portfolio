@@ -9,16 +9,16 @@ export default function Skills() {
     <div className="min-h-screen relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5 z-40">
       {" "}
       <div className="">
-        <Spotlight duration={7} />
+        <Spotlight duration={3} />
       </div>
-      <div className="min-h-screen w-full dark:bg-black-100 bg-white  dark:bg-grid-white/[0.06] bg-grid-black/[0.2]  flex items-center justify-center absolute top-0 left-0">
+      <div className="h-full w-full dark:bg-black-100 bg-white  dark:bg-grid-white/[0.06] bg-grid-black/[0.2]  flex items-center justify-center absolute top-0 left-0">
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
       </div>{" "}
       {/* <Hero /> */}
-      <div className="min-h-screen flex flex-col px-5 pt-20 text-slate-200 ">
+      <div className="min-h-screen flex flex-col px-5 pt-12 text-slate-200 ">
         <div className="pt-4 flex gap-12 px-20 z-10 items-center">
           <TextGenerateEffect
-            className=" text-[40px] md:text-3xl lg:text-4xl"
+            className="   max-md:text-xl md:text-3xl lg:text-4xl"
             words="Essential Tools I Use"
           />
         </div>
