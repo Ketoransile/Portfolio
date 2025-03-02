@@ -33,11 +33,11 @@ const Hero = () => {
             className="max-md:text-xs md:text-sm lg:text-sm  text-slate-400 font-serif"
           />
           <TextGenerateEffect
-            className="text-center text-[40px] md:text-3xl lg:text-4xl"
+            className="text-center  text-3xl lg:text-4xl"
             words="Abdi Sileshi"
           />
           <TextGenerateEffect
-            className="text-center text-[40px] md:text-5xl lg:text-6xl"
+            className="text-center  text-5xl lg:text-5xl"
             words="Software Engineer | Full-Stack Developer"
           />
 
