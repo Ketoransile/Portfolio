@@ -41,7 +41,7 @@ const Hero = () => {
             words="Software Engineer | Full-Stack Developer"
           />
 
-          <Link href="/projects">
+          <Link href="/projects" className="max-md:pt-32">
             <MagicButton
               title="Show My Work"
               icon={<FaLocationArrow />}
