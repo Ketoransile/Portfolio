@@ -16,7 +16,7 @@ export default function About() {
           <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
         </div>
         <div className="min-h-screen flex flex-col px-5 pt-20 text-slate-200 ">
-          <div className="pt-4 flex gap-12 px-20 max-xl:px-2  items-center max-xl:grid grid-cols-1 z-10">
+          <div className="pt-4 flex gap-12 px-20 max-xl:px-2 max-md:px-0 items-center max-xl:grid grid-cols-1 z-10">
             <Image
               src="/abdiImageFinal.png"
               width={400}
@@ -30,7 +30,7 @@ export default function About() {
                 className=" text-[40px] md:text-3xl lg:text-4xl"
                 words="Profile"
               />
-              <p className="text-lg xl:max-w-[800px] max-xl:w-full text-slate-300">
+              <p className="text-lg xl:max-w-[800px] max-xl:w-full text-slate-300 ">
                 I’m Abdi, a Software Engineer and Full-Stack Developer
                 passionate about building innovative, scalable, and user-centric
                 web applications. With expertise in the MERN stack, Next.js, and
