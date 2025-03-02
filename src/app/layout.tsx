@@ -4,14 +4,13 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { FloatingDock } from "@/components/ui/FloatingDock";
-import { IconBrandGithub, IconBrandX } from "@tabler/icons-react";
+import { IconBrandGithub } from "@tabler/icons-react";
 import { FaHome } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
 import { FaProjectDiagram } from "react-icons/fa";
 import { FaCode } from "react-icons/fa";
 import { FaQuoteLeft } from "react-icons/fa";
 import { MdOutlineContactPhone } from "react-icons/md";
-import { Spotlight } from "@/components/ui/Spotlight";
 import { FaTelegram } from "react-icons/fa";
 const items = [
   {
