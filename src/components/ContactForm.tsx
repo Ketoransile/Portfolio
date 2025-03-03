@@ -66,17 +66,23 @@ export function ContactForm() {
       const result = await response.json();
       if (result.success) {
         // Show success toast
-        toast.success("Form submitted successfully!");
+        toast.success(
+          "Thank you! Your message has been sent successfully. I'll get back to you as soon as possible."
+        );
         // Clear the form fields
         form.reset();
       } else {
         // Show error toast
-        toast.error("Form submission failed. Please try again.");
+        toast.error(
+          "Oops! Something went wrong. Please try again later or reach out directly."
+        );
       }
     } catch (error) {
       // Show error toast
       console.log(error);
-      toast.error("An error occurred. Please try again.");
+      toast.error(
+        "Oops! Something went wrong. Please try again later or reach out directly."
+      );
     }
   }
 
