@@ -3,6 +3,7 @@ import ShimmerButton from "@/components/ui/ShimmerButton";
 import { Spotlight } from "@/components/ui/Spotlight";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import Image from "next/image";
+import Link from "next/link";
 import { FaLocationArrow } from "react-icons/fa";
 
 export default function About() {
@@ -49,12 +50,19 @@ export default function About() {
               something amazing together!
             </p>
             <div className="flex gap-12 max-lg:pt-10 items-center">
-              <MagicButton
-                title="HIRE ME"
-                icon={<FaLocationArrow />}
-                position="right"
-              />
-              <ShimmerButton title="RESUME" />
+              <Link href="/contact">
+                <MagicButton
+                  title="HIRE ME"
+                  icon={<FaLocationArrow />}
+                  position="right"
+                />
+              </Link>
+              <Link
+                href="https://drive.google.com/file/d/1T19DTzsYH112s8tFlmvPw0-rfzNeSrqD/view?usp=sharing"
+                target="_blank"
+              >
+                <ShimmerButton title="RESUME" />
+              </Link>
             </div>
           </div>
         </div>
