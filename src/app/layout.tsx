@@ -42,13 +42,13 @@ const items = [
     ),
     href: "/projects",
   },
-  {
-    title: "Testimonials",
-    icon: (
-      <FaQuoteLeft className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-    ),
-    href: "/testimonials",
-  },
+  // {
+  //   title: "Testimonials",
+  //   icon: (
+  //     <FaQuoteLeft className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+  //   ),
+  //   href: "/testimonials",
+  // },
   {
     title: "Contact",
     icon: (
