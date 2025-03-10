@@ -179,7 +179,7 @@ const projects: Project[] = [
     link: "https://food-delivery-nextjs-gamma.vercel.app/",
   },
   {
-    id: 3,
+    id: 2,
     title: "Bet Real Estate Platform",
     des: "A modern real estate web application built using the MERN stack (MongoDB, Express.js, React.js, Node.js), designed to connect buyers, sellers, and renters with properties seamlessly.",
     img: "/projectsPictures/betRealEstate.png",
@@ -191,6 +191,20 @@ const projects: Project[] = [
       "/techIcons/javascript.svg",
     ],
     link: "https://bet-real-estate.vercel.app/",
+  },
+  {
+    id: 3,
+    title: "YourNote note taking web app",
+    des: "A fast and responsive note-taking app built with the MERN stack (MongoDB, Express, React, Node.js), offering seamless organization, real-time syncing, and a user-friendly interface.",
+    img: "/projectsPictures/yourNote.png",
+    iconLists: [
+      "/techIcons/react.svg",
+      "/techIcons/tailwind.svg",
+      "/techIcons/mongodb.svg",
+      "/techIcons/express-js.svg",
+      "/techIcons/javascript.svg",
+    ],
+    link: "https://yournote-3pnr.onrender.com/",
   },
 ];
 
