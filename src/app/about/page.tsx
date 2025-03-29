@@ -58,7 +58,7 @@ export default function About() {
                 />
               </Link>
               <Link
-                href="https://drive.google.com/file/d/1T19DTzsYH112s8tFlmvPw0-rfzNeSrqD/view?usp=sharing"
+                href="https://drive.google.com/file/d/1mniTWSivoSO-FwA5lKHXx58UY_bewirH/view?usp=sharing"
                 target="_blank"
               >
                 <ShimmerButton title="RESUME" />
