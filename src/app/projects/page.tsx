@@ -167,6 +167,20 @@ type Project = {
 const projects: Project[] = [
   {
     id: 1,
+    title: "Ethio Shop Ecommerce",
+    des: "A sleek and scalable ecommerce web application built with modern technologies to provide a seamless shopping experience. Features product browsing, secure payments via Stripe, and a responsive design tailored for performance.",
+    img: "/projectsPictures/ethioShop.png",
+    iconLists: [
+      "/techIcons/next.svg",
+      "/techIcons/typescript.svg",
+      "/techIcons/tailwind.svg",
+      "/techIcons/stripe.png",
+      "/techIcons/mongodb.svg",
+    ],
+    link: "https://ethio-shop.vercel.app/",
+  },
+  {
+    id: 2,
     title: "Food Delivery App",
     des: "A modern, responsive food delivery web application built with Next.js, offering seamless user experiences with server-side rendering (SSR) and static site generation (SSG). The app features a user-friendly interface for browsing restaurants, viewing menus, and placing orders.",
     img: "/projectsPictures/foodDelivery.png",
@@ -179,7 +193,7 @@ const projects: Project[] = [
     link: "https://food-delivery-nextjs-gamma.vercel.app/",
   },
   {
-    id: 2,
+    id: 3,
     title: "Bet Real Estate Platform",
     des: "A modern real estate web application built using the MERN stack (MongoDB, Express.js, React.js, Node.js), designed to connect buyers, sellers, and renters with properties seamlessly.",
     img: "/projectsPictures/betRealEstate.png",
@@ -193,7 +207,7 @@ const projects: Project[] = [
     link: "https://bet-real-estate.vercel.app/",
   },
   {
-    id: 3,
+    id: 4,
     title: "YourNote note taking web app",
     des: "A fast and responsive note-taking app built with the MERN stack (MongoDB, Express, React, Node.js), offering seamless organization, real-time syncing, and a user-friendly interface.",
     img: "/projectsPictures/yourNote.png",
