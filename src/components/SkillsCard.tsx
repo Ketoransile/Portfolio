@@ -1,5 +1,7 @@
-import * as React from "react";
+"use client";
 
+import * as React from "react";
+import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -25,51 +27,69 @@ import { Project } from "@/app/projects/page";
 
 export function SkillsCard({ project }: { project: Project }) {
   return (
-    <Card className="w-full mx-auto ">
-      <CardHeader className="h-[150px] ">
-        <CardTitle>{project.title}</CardTitle>
-        <CardDescription>{project.description}</CardDescription>
-      </CardHeader>
-      <CardContent>
-        {" "}
-        <div className="flex item-center gap-2 max-lg:mt-4">
-          {project.iconLists.map((icon, index) => (
-            <Image
-              src={icon}
-              width={100}
-              height={100}
-              alt="icon-image"
-              key={index}
-              className="w-6 h-6 rounded-full "
-            />
-          ))}
-        </div>
-        <Image
-          src={project.img}
-          width={1000}
-          height={1000}
-          alt="project-image"
-          className="mt-6"
-        />{" "}
-      </CardContent>
-      <CardFooter className="flex justify-between">
-        {" "}
-        <Link href={project.liveLink}>
-          <Button
-            variant="outline"
-            className="flex items-center justify-between"
-          >
-            <FaLink size={16} />
-            Live Preview
-          </Button>
-        </Link>
-        <Link href={project.githubLink}>
-          <Button className="flex items-center justify-between">
-            <FaGithub size={16} />
-            Github Link
-          </Button>
-        </Link>
-      </CardFooter>
-    </Card>
+    <motion.div
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+    >
+      <motion.div
+        whileHover={{ y: -10 }}
+        className="w-full mx-auto"
+        transition={{ type: "spring", stiffness: 300 }}
+      >
+        <Card className="shadow-xl border border-muted transition-shadow duration-300">
+          <CardHeader className="h-[150px]">
+            <CardTitle>{project.title}</CardTitle>
+            <CardDescription>{project.description}</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div className="flex items-center gap-2 max-lg:mt-4">
+              {project.iconLists.map((icon, index) => (
+                <Image
+                  src={icon}
+                  width={100}
+                  height={100}
+                  alt="icon-image"
+                  key={index}
+                  className="w-6 h-6 rounded-full"
+                />
+              ))}
+            </div>
+
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3 }}
+              className="mt-6 rounded-lg overflow-hidden"
+            >
+              <Image
+                src={project.img}
+                width={1000}
+                height={1000}
+                alt="project-image"
+                className="rounded-lg"
+              />
+            </motion.div>
+          </CardContent>
+          <CardFooter className="flex justify-between">
+            <Link href={project.liveLink} target="_blank">
+              <Button
+                variant="outline"
+                className="flex items-center gap-2 hover:scale-105 transition-transform"
+              >
+                <FaLink size={16} />
+                Live Preview
+              </Button>
+            </Link>
+            <Link href={project.githubLink} target="_blank">
+              <Button className="flex items-center gap-2 hover:scale-105 transition-transform">
+                <FaGithub size={16} />
+                Github Link
+              </Button>
+            </Link>
+          </CardFooter>
+        </Card>
+      </motion.div>
+    </motion.div>
   );
 }
