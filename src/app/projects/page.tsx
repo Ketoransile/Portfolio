@@ -171,7 +171,7 @@ const projects: Project[] = [
     id: 1,
     title: "Ethio Shop Ecommerce",
     description:
-      "A sleek and scalable ecommerce web application built with modern technologies to provide a seamless shopping experience. Features product browsing, secure payments via Stripe, and a responsive design tailored for performance.",
+      "A sleek and scalable ecommerce app built with modern tools like Next.js and Stripe. Features include product browsing, secure checkout, and responsive performance for a smooth shopping experience.",
     img: "/projectsPictures/ethioShop.png",
     iconLists: [
       "/techIcons/next.svg",
@@ -187,7 +187,7 @@ const projects: Project[] = [
     id: 2,
     title: "Food Delivery App",
     description:
-      "A modern, responsive food delivery web application built with Next.js, offering seamless user experiences with server-side rendering (SSR) and static site generation (SSG). The app features a user-friendly interface for browsing restaurants, viewing menus, and placing orders.",
+      "A modern food delivery platform using Next.js with SSR and SSG. Users can browse restaurants, view menus, and place orders through a smooth and responsive interface designed for performance.",
     img: "/projectsPictures/foodDelivery.png",
     iconLists: [
       "/techIcons/next.svg",
@@ -202,7 +202,7 @@ const projects: Project[] = [
     id: 3,
     title: "Bet Real Estate Platform",
     description:
-      "A modern real estate web application built using the MERN stack (MongoDB, Express.js, React.js, Node.js), designed to connect buyers, sellers, and renters with properties seamlessly.",
+      "A dynamic real estate platform built with the MERN stack. Enables users to explore properties, connect with agents, and manage listings through a clean, responsive interface and robust backend.",
     img: "/projectsPictures/betRealEstate.png",
     iconLists: [
       "/techIcons/react.svg",
@@ -214,6 +214,7 @@ const projects: Project[] = [
     liveLink: "https://bet-real-estate.vercel.app/",
     githubLink: "https://github.com/Ketoransile/Bet-Real-EstateProject",
   },
+
   // {
   //   id: 4,
   //   title: "YourNote note taking web app",
@@ -247,7 +248,7 @@ const ProjectsPage: React.FC = () => {
           words="Things I've Built"
         />
 
-        <div className="z-10 grid items-center justify-center gap-12 md:grid-cols-2 lg:grid-cols-3 pt-20 pb-20">
+        <div className="z-10 grid items-center justify-center gap-12 sm:grid-cols-2 lg:grid-cols-3 pt-20 pb-20">
           {projects.map((project, index) => (
             <SkillsCard project={project} key={index} />
           ))}

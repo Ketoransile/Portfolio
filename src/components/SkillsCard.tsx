@@ -31,14 +31,8 @@ export function SkillsCard({ project }: { project: Project }) {
         <CardDescription>{project.description}</CardDescription>
       </CardHeader>
       <CardContent>
-        <Image
-          src={project.img}
-          width={1000}
-          height={1000}
-          alt="project-image"
-          // className="stretch"
-        />{" "}
-        <div className="flex item-center gap-2 mt-4">
+        {" "}
+        <div className="flex item-center gap-2 max-lg:mt-4">
           {project.iconLists.map((icon, index) => (
             <Image
               src={icon}
@@ -50,6 +44,13 @@ export function SkillsCard({ project }: { project: Project }) {
             />
           ))}
         </div>
+        <Image
+          src={project.img}
+          width={1000}
+          height={1000}
+          alt="project-image"
+          className="mt-6"
+        />{" "}
       </CardContent>
       <CardFooter className="flex justify-between">
         {" "}
