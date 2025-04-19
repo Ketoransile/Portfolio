@@ -171,7 +171,7 @@ export default function About() {
                 />
               </Link>
               <Link
-                href="https://drive.google.com/file/d/1mniTWSivoSO-FwA5lKHXx58UY_bewirH/view?usp=sharing"
+                href="https://drive.google.com/file/d/1Hc4LC_umofwsPIa1ElXqOuc2A6FjCQ2F/view?usp=drive_link"
                 target="_blank"
               >
                 <ShimmerButton title="RESUME" />
