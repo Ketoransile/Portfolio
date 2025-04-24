@@ -99,14 +99,14 @@ const Hero = () => {
           <motion.div variants={item}>
             <TextGenerateEffect
               className="text-center text-3xl lg:text-4xl"
-              words="Abdi Sileshi"
+              words="Abdi Sileshi Worku"
             />
           </motion.div>
 
           <motion.div variants={item}>
             <TextGenerateEffect
-              className="text-center text-5xl lg:text-5xl"
-              words="Software Engineer | Full-Stack Developer"
+              className="text-center text-2xl lg:text-5xl mt-4"
+              words="Software Engineer || Full-Stack Developer"
             />
           </motion.div>
 
