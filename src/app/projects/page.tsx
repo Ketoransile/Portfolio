@@ -236,7 +236,7 @@ const projects: Project[] = [
 const ProjectsPage: React.FC = () => {
   return (
     <>
-      <div className="relative bg-black-100 flex items-center overflow-hidden flex-col mx-auto sm:px-10 px-5 max-lg:pb-20">
+      <div className="relative bg-black-100 flex items-center overflow-hidden flex-col mx-auto sm:px-10 px-5 max-lg:pb-20 mb-20">
         <Spotlight duration={3} />
 
         <div className="w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.6] bg-grid-black/[0.2] flex items-center justify-center absolute top-0 left-0 h-full">

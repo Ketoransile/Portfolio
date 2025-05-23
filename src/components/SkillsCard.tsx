@@ -34,7 +34,7 @@ export function SkillsCard({ project }: { project: Project }) {
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
       <motion.div
-        whileHover={{ y: -10 }}
+        whileHover={{ y: 0 }}
         className="w-full mx-auto"
         transition={{ type: "spring", stiffness: 300 }}
       >
@@ -58,17 +58,19 @@ export function SkillsCard({ project }: { project: Project }) {
             </div>
 
             <motion.div
-              whileHover={{ scale: 1.05 }}
+              whileHover={{ scale: 1.03 }}
               transition={{ duration: 0.3 }}
               className="mt-6 rounded-lg overflow-hidden"
             >
-              <Image
-                src={project.img}
-                width={1000}
-                height={1000}
-                alt="project-image"
-                className="rounded-lg"
-              />
+              <Link href={project.liveLink}>
+                <Image
+                  src={project.img}
+                  width={1000}
+                  height={1000}
+                  alt="project-image"
+                  className="rounded-lg"
+                />
+              </Link>
             </motion.div>
           </CardContent>
           <CardFooter className="flex justify-between">
