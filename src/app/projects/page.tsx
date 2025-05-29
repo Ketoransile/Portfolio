@@ -185,6 +185,24 @@ const projects: Project[] = [
   },
   {
     id: 2,
+    title: "NextJobs",
+    description:
+      "A modern job application platform built with Next.js and a Node.js/Express backend. Users can browse job listings, filter by category or location, and apply directly with an intuitive and responsive interface.",
+    img: "/projectsPictures/nextJobs.png", // You might want to change this image to something job-related
+    iconLists: [
+      "/techIcons/next.svg",
+      "/techIcons/tailwind.svg",
+      "/techIcons/mongodb.svg",
+      "/techIcons/typescript.svg",
+      "/techIcons/node.svg",
+      "/techIcons/javascript.svg",
+      "/techIcons/express.svg",
+    ],
+    liveLink: "https://job-portal-omega-flame.vercel.app/", // Update if you have a new deployment link for the job platform
+    githubLink: "https://github.com/Ketoransile/JobPortal", // Update if repo name changes
+  },
+  {
+    id: 3,
     title: "Food Delivery App",
     description:
       "A modern food delivery platform using Next.js with SSR and SSG. Users can browse restaurants, view menus, and place orders through a smooth and responsive interface designed for performance.",
@@ -199,7 +217,7 @@ const projects: Project[] = [
     githubLink: "https://github.com/Ketoransile/FoodDeliveryNextjs",
   },
   {
-    id: 3,
+    id: 4,
     title: "Bet Real Estate Platform",
     description:
       "A dynamic real estate platform built with the MERN stack. Enables users to explore properties, connect with agents, and manage listings through a clean, responsive interface and robust backend.",
