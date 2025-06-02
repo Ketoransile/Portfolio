@@ -40,11 +40,13 @@ export function SkillsCard({ project }: { project: Project }) {
       >
         <Card className="shadow-xl border border-muted transition-shadow duration-300">
           <CardHeader className="h-[150px]">
-            <CardTitle>{project.title}</CardTitle>
-            <CardDescription>{project.description}</CardDescription>
+            <CardTitle className="pb-2 text-center">{project.title}</CardTitle>
+            <CardDescription className="pb-2 text-center">
+              {project.description}
+            </CardDescription>
           </CardHeader>
           <CardContent>
-            <div className="flex items-center gap-2 max-lg:mt-4">
+            <div className="flex items-center justify-center gap-2 max-lg:mt-4">
               {project.iconLists.map((icon, index) => (
                 <Image
                   src={icon}

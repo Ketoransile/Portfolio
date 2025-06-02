@@ -34,7 +34,7 @@ import { motion } from "framer-motion";
 
 export default function Contact() {
   return (
-    <div className="min-h-screen relative bg-black-100 flex items-center flex-col overflow-hidden mx-auto sm:px-10 px-5 max-md:pt-20">
+    <div className="min-h-screen relative bg-black-100 flex items-center flex-col overflow-hidden mx-auto sm:px-10 px-5 max-md:pt-20 mb-20">
       <Spotlight duration={3} />
 
       <div className="min-h-screen w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.06] bg-grid-black/[0.2] flex items-center justify-center absolute top-0 left-0">
@@ -64,7 +64,7 @@ export default function Contact() {
       </motion.div>
 
       <motion.div
-        className="max-w-[800px] z-10 bg-gradient-to-t from-black to-transparent mt-12 p-12 rounded-2xl max-md:w-full max-md:p-0"
+        className="max-w-[800px] z-10 border dark:border-none shadow-xl  border-muted transition-shadow duration-300 dark:bg-gradient-to-t from-black to-transparent mt-12 p-12 rounded-2xl max-md:w-full max-md:p-0"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.9, ease: "easeOut" }}

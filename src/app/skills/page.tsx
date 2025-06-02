@@ -176,7 +176,7 @@ export default function Skills() {
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
       </div>
 
-      <div className="min-h-screen flex flex-col px-5 pt-12 text-slate-200 z-10">
+      <div className="min-h-screen flex flex-col items-center justify-center px-5 pt-12 text-slate-200 z-10">
         <motion.div
           className="pt-4 flex gap-12 px-20 items-center"
           initial={{ opacity: 0, y: 30 }}

@@ -114,7 +114,7 @@ export default function About() {
             }}
           >
             <Image
-              src="/abdiImageFinal.png"
+              src="/updatedAbdi.png"
               width={400}
               height={400}
               alt="my-image"
@@ -135,7 +135,7 @@ export default function About() {
             />
 
             <motion.p
-              className="text-lg xl:max-w-[800px] max-xl:w-full text-slate-300 mt-4"
+              className="text-lg xl:max-w-[800px] max-xl:w-full text-slate-500 dark:text-slate-300 mt-4"
               variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}
               transition={{ delay: 0.2 }}
             >
