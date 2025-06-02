@@ -87,7 +87,7 @@ export function ContactForm() {
   }
 
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-4 max-md:p-6">
       <div className="flex gap-4 justify-center">
         <Link href="www.linkedin.com/in/abdi-sileshi-56710a2a6">
           <FaLinkedin />

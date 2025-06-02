@@ -80,12 +80,12 @@ import { motion } from "framer-motion";
 
 export default function About() {
   return (
-    <div className="min-h-screen relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5 max-lg:pb-20 ">
+    <div className="min-h-screen relative dark:bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5 mb-20 ">
       <div className="">
         <Spotlight duration={3} />
       </div>
 
-      <div className="h-screen w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.5] bg-grid-black/[0.4] flex items-center justify-center absolute top-0 left-0 z-0">
+      <div className="min-h-screen w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.5] bg-grid-black/[0.4] flex items-center justify-center absolute top-0 left-0 z-0">
         <div className="min-h-screen absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_30%,black)]" />
       </div>
 
@@ -163,7 +163,7 @@ export default function About() {
               }}
               transition={{ delay: 0.3 }}
             >
-              <Link href="/contact">
+              <Link href="/contact" className="">
                 <MagicButton
                   title="HIRE ME"
                   icon={<FaLocationArrow />}
