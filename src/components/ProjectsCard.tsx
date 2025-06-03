@@ -10,7 +10,7 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "../components/ui/card";
+} from "./ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import {
@@ -25,7 +25,7 @@ import { FaGithub, FaLink } from "react-icons/fa6";
 import Link from "next/link";
 import { Project } from "@/app/projects/page";
 
-export function SkillsCard({ project }: { project: Project }) {
+export function ProjectsCard({ project }: { project: Project }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 40 }}

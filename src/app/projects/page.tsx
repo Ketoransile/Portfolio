@@ -149,7 +149,7 @@
 
 // export default ProjectsPage;
 
-import { SkillsCard } from "@/components/SkillsCard";
+import { ProjectsCard, SkillsCard } from "@/components/ProjectsCard";
 import { PinContainer } from "@/components/ui/3d-pin";
 import { Spotlight } from "@/components/ui/Spotlight";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
@@ -268,7 +268,7 @@ const ProjectsPage: React.FC = () => {
 
         <div className="z-10 grid items-center justify-center gap-12 sm:grid-cols-2 lg:grid-cols-3 pt-20 pb-20">
           {projects.map((project, index) => (
-            <SkillsCard project={project} key={index} />
+            <ProjectsCard project={project} key={index} />
           ))}
         </div>
       </div>

@@ -227,7 +227,7 @@ export default function RootLayout({
             <FloatingDock
               items={items}
               desktopClassName="z-50 fixed bottom-2"
-              mobileClassName="z-50 fixed bottom-2"
+              mobileClassName="z-50 fixed bottom-0"
             />
           </div>
           <div className="absolute right-4 top-4">
