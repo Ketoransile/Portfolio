@@ -251,10 +251,10 @@ export default function Skills() {
         >
           <TextGenerateEffect
             className="text-center max-md:text-xl md:text-3xl lg:text-4xl"
-            words="Essential Tools I Use"
+            words="<Tech Stack/>"
           />
         </motion.div>
-        <div className="grid grid-cols-2 items-start gap-y-6 gap-x-48">
+        <div className="grid max-lg:grid-cols-1 grid-cols-2 items-start gap-y-6 gap-x-48">
           <motion.div
             className="mt-12 "
             initial="hidden"
