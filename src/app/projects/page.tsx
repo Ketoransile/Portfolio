@@ -81,6 +81,22 @@ const projects: Project[] = [
     liveLink: "https://bet-real-estate.vercel.app/",
     githubLink: "https://github.com/Ketoransile/Bet-Real-EstateProject",
   },
+  {
+    id: 5,
+    title: "YourNote - Note Taking Web App",
+    description:
+      "YourNote is a sleek and efficient note-taking web application that allows users to create, organize, and manage their notes with ease. It features a responsive interface and a robust backend to ensure a seamless and reliable note-taking experience.",
+    img: "/projectsPictures/yourNote.png",
+    iconLists: [
+      "/techIcons/react.svg",
+      "/techIcons/tailwind.svg",
+      "/techIcons/mongodb.svg",
+      "/techIcons/express-js.svg",
+      "/techIcons/javascript.svg",
+    ],
+    liveLink: "https://yournote-3pnr.onrender.com",
+    githubLink: "https://github.com/Ketoransile/YourNote",
+  },
 
   // {
   //   id: 4,
