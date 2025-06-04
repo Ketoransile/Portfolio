@@ -5,6 +5,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { FloatingDock } from "@/components/ui/FloatingDock";
 import { IconBrandGithub } from "@tabler/icons-react";
+import { Montserrat } from "next/font/google";
 import {
   FaHome,
   FaUser,
@@ -76,7 +77,10 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: "400",
+});
 export const metadata: Metadata = {
   title: "Abdi's Portfolio",
   description: "Abdi's portfolio",
@@ -90,7 +94,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased font-serif`}
+        className={`${montserrat.className} ${geistSans.variable} ${geistMono.variable} antialiased `}
       >
         <ThemeProvider
           attribute="class"

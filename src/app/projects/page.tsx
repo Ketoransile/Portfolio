@@ -85,7 +85,7 @@ const projects: Project[] = [
     id: 5,
     title: "YourNote - Note Taking Web App",
     description:
-      "YourNote is a sleek and efficient note-taking web application that allows users to create, organize, and manage their notes with ease. It features a responsive interface and a robust backend to ensure a seamless and reliable note-taking experience.",
+      "YourNote is a sleek, responsive web app for creating and managing notes effortlessly, backed by a reliable and robust backend",
     img: "/projectsPictures/yourNote.png",
     iconLists: [
       "/techIcons/react.svg",
@@ -119,7 +119,7 @@ const projects: Project[] = [
 const ProjectsPage: React.FC = () => {
   return (
     <>
-      <div className="relative bg-black-100 flex items-center overflow-hidden flex-col mx-auto sm:px-10 px-5 max-lg:pb-20 mb-20">
+      <div className="relative bg-black-100 flex items-center overflow-hidden flex-col mx-auto sm:px-10 px-5 max-lg:pb-20 pb-20">
         <Spotlight duration={3} />
 
         <div className="w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.6] bg-grid-black/[0.2] flex items-center justify-center absolute top-0 left-0 h-full">
@@ -128,7 +128,7 @@ const ProjectsPage: React.FC = () => {
 
         <TextGenerateEffect
           className="max-md:text-xl md:text-3xl lg:text-4xl pt-12 pb-0"
-          words="Things I've Built"
+          words="Code in Action"
         />
 
         <div className="z-10 grid items-center justify-center gap-12 sm:grid-cols-2 lg:grid-cols-3 pt-20 pb-20">

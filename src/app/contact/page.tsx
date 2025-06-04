@@ -34,7 +34,7 @@ import { motion } from "framer-motion";
 
 export default function Contact() {
   return (
-    <div className="min-h-screen relative dark:bg-black-100 flex items-center flex-col overflow-hidden mx-auto sm:px-10 px-5 max-md:pt-20 mb-20">
+    <div className="min-h-screen relative dark:bg-black-100 flex items-center flex-col overflow-hidden mx-auto sm:px-10 px-5 max-md:pt-20 pb-20">
       <Spotlight duration={3} />
 
       <div className="min-h-screen w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.06] bg-grid-black/[0.2] flex items-center justify-center absolute top-0 left-0">

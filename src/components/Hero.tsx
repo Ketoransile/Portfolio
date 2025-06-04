@@ -55,7 +55,7 @@ const Hero = () => {
           {/* Name */}
           <motion.div variants={item}>
             <TextGenerateEffect
-              className="text-2xl md:text-3xl lg:text-4xl font-bold mt-4"
+              className="text-2xl md:text-3xl lg:text-4xl font-bold mt-4 max-md:mt-12"
               words="Abdi Sileshi Worku"
             />
           </motion.div>
