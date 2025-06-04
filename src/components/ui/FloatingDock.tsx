@@ -240,12 +240,18 @@ const FloatingDockMobile = ({
       // onMouseMove={(e) => mouseX.set(e.pageX)}
       // onMouseLeave={() => mouseX.set(Infinity)}
       className={cn(
-        "mx-auto w-full  flex rounded-none md:hidden h-16 gap-2 items-center justify-center  max-md:bg-none bg-neutral-200 dark:bg-neutral-900 p-2  px-4",
+        " w-full  flex rounded-none md:hidden h-16 gap-4  sm:gap-10 items-center justify-between  max-md:bg-none bg-neutral-200 dark:bg-neutral-900 p-2  px-4",
         className
       )}
     >
       {items.map((item) => (
-        <IconContainer mouseX={mouseX} key={item.title} {...item} />
+        <div
+          className="flex flex-col items-center justify-center"
+          key={item.title}
+        >
+          <IconContainer mouseX={mouseX} key={item.title} {...item} />
+          <h1 className="text-xs">{item.title}</h1>
+        </div>
       ))}
     </motion.div>
   );
