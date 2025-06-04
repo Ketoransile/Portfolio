@@ -20,7 +20,7 @@ import {
 import { Input } from "../components/ui/input";
 import { Textarea } from "./ui/textarea";
 import Link from "next/link";
-import { FaSquareTwitter } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa6";
 import { toast } from "sonner";
 const formSchema = z.object({
   email: z.string().email({
@@ -89,14 +89,17 @@ export function ContactForm() {
   return (
     <div className="flex flex-col gap-4 max-md:p-6">
       <div className="flex gap-4 justify-center">
-        <Link href="www.linkedin.com/in/abdi-sileshi-56710a2a6">
+        <Link
+          href="https://www.linkedin.com/in/abdi-sileshi-56710a2a6"
+          target="_blank"
+        >
           <FaLinkedin />
         </Link>
-        <Link href="https://github.com/Ketoransile">
+        <Link href="https://github.com/Ketoransile" target="_blank">
           <FaGithub />
         </Link>
-        <Link href="/">
-          <FaSquareTwitter />
+        <Link href="https://www.instagram.com/abdi_sile/" target="_blank">
+          <FaInstagram />
         </Link>
       </div>
       <div className="flex justify-between gap-4 max-md:flex-col items-center">
