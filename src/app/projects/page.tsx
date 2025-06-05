@@ -131,7 +131,7 @@ const ProjectsPage: React.FC = () => {
           words="Code in Action"
         />
 
-        <div className="z-10 grid items-center justify-center gap-12 sm:grid-cols-2 lg:grid-cols-3 pt-20 pb-20">
+        <div className="z-10 grid items-center justify-center gap-12 lg:grid-cols-2 xl:grid-cols-3 pt-20 pb-20">
           {projects.map((project, index) => (
             <ProjectsCard project={project} key={index} />
           ))}
