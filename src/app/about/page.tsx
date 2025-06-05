@@ -60,7 +60,7 @@ export default function About() {
             }}
           >
             <TextGenerateEffect
-              className=" text-[40px] md:text-3xl lg:text-4xl"
+              className=" text-[40px]  max-md:text-xl md:text-3xl lg:text-4xl"
               words="Profile"
             />
 

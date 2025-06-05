@@ -34,7 +34,8 @@ import { motion } from "framer-motion";
 
 export default function Contact() {
   return (
-    <div className="min-h-screen relative dark:bg-black-100 flex items-center flex-col overflow-hidden mx-auto sm:px-10 px-5 max-md:pt-20 pb-20">
+    // <div className="min-h-screen relative dark:bg-black-100 flex items-center flex-col overflow-hidden mx-auto sm:px-10 px-5 max-md:pt-20 pb-20">
+    <div className="min-h-screen relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5 z-40 pb-20">
       <Spotlight duration={3} />
 
       <div className="min-h-screen w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.06] bg-grid-black/[0.2] flex items-center justify-center absolute top-0 left-0">
@@ -47,7 +48,7 @@ export default function Contact() {
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
         <TextGenerateEffect
-          className="text-[40px] md:text-3xl lg:text-4xl pt-4 max-md:text-center max-md:text-2xl"
+          className="text-[40px] md:text-3xl lg:text-4xl pt-12 max-md:text-center max-md:text-2xl"
           words="Get In Touch"
         />
       </motion.div>

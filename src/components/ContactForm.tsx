@@ -3,7 +3,7 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-import { FaLinkedin } from "react-icons/fa";
+import { FaLinkedin, FaTelegram } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
 import { MdOutlineEmail } from "react-icons/md";
@@ -89,6 +89,9 @@ export function ContactForm() {
   return (
     <div className="flex flex-col gap-4 max-md:p-6">
       <div className="flex gap-4 justify-center">
+        <Link href="https://t.me/Kehtoran" target="_blank">
+          <FaTelegram />
+        </Link>
         <Link
           href="https://www.linkedin.com/in/abdi-sileshi-56710a2a6"
           target="_blank"

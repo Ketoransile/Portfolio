@@ -19,46 +19,34 @@ import { ThemeToggle } from "@/components/ThemeToggle";
 const items = [
   {
     title: "Home",
-    icon: (
-      <FaHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-    ),
+    icon: <FaHome className="h-full w-full " />,
     href: "/",
   },
   {
     title: "About",
-    icon: (
-      <FaUser className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-    ),
+    icon: <FaUser className="h-full w-full " />,
     href: "/about",
   },
   {
     title: "Skills",
-    icon: (
-      <FaCode className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-    ),
+    icon: <FaCode className="h-full w-full " />,
     href: "/skills",
   },
   {
     title: "Projects",
-    icon: (
-      <FaProjectDiagram className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-    ),
+    icon: <FaProjectDiagram className="h-full w-full " />,
     href: "/projects",
   },
   {
     title: "Contact",
-    icon: (
-      <MdOutlineContactPhone className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-    ),
+    icon: <MdOutlineContactPhone className="h-full w-full " />,
     href: "/contact",
   },
-  {
-    title: "Telegram",
-    icon: (
-      <FaTelegram className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-    ),
-    href: "https://t.me/Kehtoran",
-  },
+  // {
+  //   title: "Telegram",
+  //   icon: <FaTelegram className="h-full w-full " />,
+  //   href: "https://t.me/Kehtoran",
+  // },
   // {
   //   title: "GitHub",
   //   icon: (
