@@ -43,6 +43,7 @@ const FloatingDockMobile = ({
   className?: string;
 }) => {
   const mouseX = useMotionValue(Infinity);
+  const pathname = usePathname();
   return (
     <motion.div
       // onMouseMove={(e) => mouseX.set(e.pageX)}
@@ -58,7 +59,15 @@ const FloatingDockMobile = ({
           key={item.title}
         >
           <IconContainer mouseX={mouseX} key={item.title} {...item} />
-          <h1 className="text-xs">{item.title}</h1>
+          <h1
+            className={`text-xs ${
+              pathname === item.href
+                ? "text-black dark:text-white"
+                : "text-neutral-400"
+            }`}
+          >
+            {item.title}
+          </h1>
         </div>
       ))}
     </motion.div>
@@ -170,7 +179,9 @@ function IconContainer({
         <motion.div
           style={{ width: widthIcon, height: heightIcon }}
           className={`flex items-center justify-center max-md:bg-none ${
-            pathname === href ? "text-white" : "text-neutral-500"
+            pathname === href
+              ? "text-black dark:text-white"
+              : "text-neutral-500"
           }`}
         >
           {icon}
