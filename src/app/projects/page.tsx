@@ -13,11 +13,32 @@ export type Project = {
   iconLists: string[];
   liveLink: string;
   githubLink: string;
+  backend_githubLink?: string;
 };
 
 const projects: Project[] = [
   {
-    id: 1,
+    id: 1, // Assign a new unique ID
+    title: "AI-Powered Resume Analyzer",
+    description:
+      "An innovative web application that leverages AI (GPT-4.1) to analyze resumes against job descriptions, providing instant fit scores and actionable feedback to optimize job applications.",
+    img: "/projectsPictures/resumeAnalyzer.png", // **Suggesting a new image path here, you'll need to create or use an appropriate image.**
+    iconLists: [
+      "/techIcons/next.svg",
+      "/techIcons/typescript.svg",
+      "/techIcons/tailwind.svg",
+      "/techIcons/mongodb.svg", // Assuming MongoDB for the backend, adjust if different
+      "/techIcons/node.svg", // Assuming Node.js for backend, adjust if different
+      "/techIcons/express.svg", // Assuming Express for backend, adjust if different
+      "/techIcons/openai.svg", // Representing the AI aspect (GPT-4.1)
+    ],
+    liveLink: "https://resume-analyzer-frontend-delta.vercel.app/",
+    githubLink: "https://github.com/Ketoransile/ResumeAnalyzerFrontend", // This is the frontend link
+    // Consider adding a backend_githubLink if you have a separate backend repo
+    backend_githubLink: "https://github.com/Ketoransile/ResumeAnalyzerBackend", // Example if you have a separate backend repo
+  },
+  {
+    id: 2,
     title: "Ethio Shop Ecommerce",
     description:
       "A sleek and scalable ecommerce app built with modern tools like Next.js and Stripe. Features include product browsing, secure checkout, and responsive performance for a smooth shopping experience.",
@@ -33,7 +54,7 @@ const projects: Project[] = [
     githubLink: "https://github.com/Ketoransile/EthioShop",
   },
   {
-    id: 2,
+    id: 3,
     title: "NextJobs",
     description:
       "A modern job application platform built with Next.js and a Node.js/Express backend. Users can browse job listings, filter by category or location, and apply directly with an intuitive and responsive interface.",
@@ -51,7 +72,7 @@ const projects: Project[] = [
     githubLink: "https://github.com/Ketoransile/JobPortal", // Update if repo name changes
   },
   {
-    id: 3,
+    id: 4,
     title: "Food Delivery App",
     description:
       "A modern food delivery platform using Next.js with SSR and SSG. Users can browse restaurants, view menus, and place orders through a smooth and responsive interface designed for performance.",
@@ -66,7 +87,7 @@ const projects: Project[] = [
     githubLink: "https://github.com/Ketoransile/FoodDeliveryNextjs",
   },
   {
-    id: 4,
+    id: 5,
     title: "Bet Real Estate Platform",
     description:
       "A dynamic real estate platform built with the MERN stack. Enables users to explore properties, connect with agents, and manage listings through a clean, responsive interface and robust backend.",
@@ -82,7 +103,7 @@ const projects: Project[] = [
     githubLink: "https://github.com/Ketoransile/Bet-Real-EstateProject",
   },
   {
-    id: 5,
+    id: 6,
     title: "YourNote - Note Taking Web App",
     description:
       "YourNote is a sleek, responsive web app for creating and managing notes effortlessly, backed by a reliable and robust backend",
