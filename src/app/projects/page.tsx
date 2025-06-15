@@ -32,7 +32,7 @@ const projects: Project[] = [
       "/techIcons/express.svg", // Assuming Express for backend, adjust if different
       "/techIcons/openai.svg", // Representing the AI aspect (GPT-4.1)
     ],
-    liveLink: "https://resume-analyzer-frontend-delta.vercel.app/",
+    liveLink: "https://quantumcv.vercel.app/",
     githubLink: "https://github.com/Ketoransile/ResumeAnalyzerFrontend", // This is the frontend link
     // Consider adding a backend_githubLink if you have a separate backend repo
     backend_githubLink: "https://github.com/Ketoransile/ResumeAnalyzerBackend", // Example if you have a separate backend repo
