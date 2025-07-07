@@ -55,6 +55,23 @@ const projects: Project[] = [
   },
   {
     id: 3,
+    title: "Drivezy Car Rental",
+    description:
+      "A comprehensive car‑rental platform built with Vite, React, and TypeScript. Users can browse the fleet, filter cars by make, model, price, or features, and place bookings through a fast, responsive interface backed by a secure Node/Express API and MongoDB database.", // Built with Vite + React + TS :contentReference[oaicite:0]{index=0}
+    img: "/projectsPictures/drivezyCarRental.png",
+    iconLists: [
+      "/techIcons/react.svg",
+      "/techIcons/typescript.svg",
+      "/techIcons/tailwind.svg",
+      "/techIcons/mongodb.svg",
+      "/techIcons/node.svg",
+      "/techIcons/express.svg",
+    ],
+    liveLink: "https://drivezy-car-rental.vercel.app/",
+    githubLink: "https://github.com/Ketoransile/CarRental", // ⬅️ update if different
+  },
+  {
+    id: 4,
     title: "NextJobs",
     description:
       "A modern job application platform built with Next.js and a Node.js/Express backend. Users can browse job listings, filter by category or location, and apply directly with an intuitive and responsive interface.",
@@ -72,7 +89,7 @@ const projects: Project[] = [
     githubLink: "https://github.com/Ketoransile/JobPortal", // Update if repo name changes
   },
   {
-    id: 4,
+    id: 5,
     title: "Food Delivery App",
     description:
       "A modern food delivery platform using Next.js with SSR and SSG. Users can browse restaurants, view menus, and place orders through a smooth and responsive interface designed for performance.",
@@ -87,7 +104,7 @@ const projects: Project[] = [
     githubLink: "https://github.com/Ketoransile/FoodDeliveryNextjs",
   },
   {
-    id: 5,
+    id: 6,
     title: "Bet Real Estate Platform",
     description:
       "A dynamic real estate platform built with the MERN stack. Enables users to explore properties, connect with agents, and manage listings through a clean, responsive interface and robust backend.",
@@ -103,7 +120,7 @@ const projects: Project[] = [
     githubLink: "https://github.com/Ketoransile/Bet-Real-EstateProject",
   },
   {
-    id: 6,
+    id: 7,
     title: "YourNote - Note Taking Web App",
     description:
       "YourNote is a sleek, responsive web app for creating and managing notes effortlessly, backed by a reliable and robust backend",
